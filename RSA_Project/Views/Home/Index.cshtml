@@ -1,0 +1,197 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+</br>
+@using (Html.BeginForm("index", "Home", FormMethod.Post, new { enctype = "multipart/form-data", ID = "Action" }))
+{
+<div class="col-md-12">
+    <div class="col-md-4">
+        <div class="panel panel-primary table-bordered">
+            <div class="panel-heading h6" style="height:35px"><p class="h4" style="text-align:center">Калитлар</p></div>
+            <div class="table-responsive">
+                <table class="table table-bordered" style="text-align:center">
+                    <tr>
+                        <td style="height:35px; width:130px">
+                            <b>p</b>
+                        </td>
+                        <td>
+                            @ViewBag.p
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>q</b>
+                        </td>
+                        <td>
+                            @ViewBag.q
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Xabar</b>
+                        </td>
+                        <td>
+                            <input style="height:25px" type="text" class="form-control" id="usr" name="message" value="@ViewBag.message">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:35px;">
+                            <b>Immun algoritm</b>
+                        </td>
+                        <td>
+                            @*@ViewBag.h (@ViewBag.h_hex)*@
+                            @ViewBag.h_hex
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br /><br /><br />
+    <div class="col-md-4">
+        <div class="panel panel-primary table-bordered">
+            <div class="panel-heading h6" style="height:35px"><p class="h4" style="text-align:center">Очик Калит</p></div>
+            <div class="table-responsive">
+                <table class="table table-bordered" style="text-align:center">
+                    <tr>
+                        <td style="height:30px; width:30px">
+                            <h5>e</h5>
+                        </td>
+                        <td>
+                            <input style="height:30px; width:330px" type="text" class="form-control" id="usr" value="@ViewBag.E_hex" name="exp">@*@ViewBag.E (@ViewBag.E_hex)*@
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:30px;">
+                            <h5>n</h5>
+                        </td>
+                        <td>
+                            @*@ViewBag.n (@ViewBag.n_hex)*@
+                            @ViewBag.n_hex
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <div class="col-md-4">
+        <div class="panel panel-primary table-bordered">
+            <div class="panel-heading h6" style="height:35px"><p class="h4" style="text-align:center">Натижа</p></div>
+            <div class="table-responsive">
+                <table class="table table-bordered" style="text-align:center">
+                    <tr>
+                        <td style="height:35px; width:130px">
+                            <b>h</b>
+                        </td>
+                        <td>
+                            @*@ViewBag.h (@ViewBag.h_hex)*@
+                            @ViewBag.h_hex
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>H</b>
+                        </td>
+                        <td>
+                            @*@ViewBag.h_m (@ViewBag.h_m_hex)*@
+                            @ViewBag.h_m_hex
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Tekshirish</b>
+                        </td>
+                        <td>
+                            @ViewBag.verna
+                            @ViewBag.neverna
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:35px;">
+                            <b>Immun algoritm</b>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
+                
+        </div>
+            <div class="pull-right">
+                <button type="submit" class="btn btn-success">
+                    Натижа
+                </button>
+            </div> 
+    </div>
+        
+</div>
+   </div>
+<div class="col-md-12">
+    <div class="col-md-4">
+        <div class="panel panel-primary table-bordered">
+            <div class="panel-heading h6" style="height:35px"><p class="h4" style="text-align:center">Кабул килинган маълумот</p></div>
+            <div class="table-responsive">
+                <table class="table table-bordered" style="text-align:center">
+                    <tr>
+                        <td style="height:35px; width:130px">
+                            <b>Ёпик калит d</b>
+                        </td>
+                        <td>
+                            <input style="height:25px" type="text" class="form-control" id="usr" value="@ViewBag.d_hex">@*@ViewBag.D (@ViewBag.d_hex)*@
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:35px;">
+                            <b>h</b>
+                        </td>
+                        <td>
+                            @*@ViewBag.h (@ViewBag.h_hex)*@
+                            @ViewBag.h_hex
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:35px;">
+                            <b>sign</b>
+                        </td>
+                        <td>
+                            @*@ViewBag.sign (@ViewBag.sign_hex)*@
+                            @ViewBag.sign_hex
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-primary table-bordered">
+            <div class="panel-heading h6" style="height:35px"><p class="h4" style="text-align:center">ЭРИ хабари</p></div>
+            <div class="table-responsive">
+                <table class="table table-bordered" style="text-align:center">
+                    <tr>
+                        <td style="height:35px; width:30px">
+                            <h5>m</h5>
+                        </td>
+                        <td>
+                            <input style="height:32px; width:330px" type="text" class="form-control" id="usr" value="@ViewBag.message">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:35px;">
+                            <h5>sign</h5>
+                        </td>
+                        <td>
+                            @*@ViewBag.sign (@ViewBag.sign_hex)*@
+                            @ViewBag.sign_hex
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    }
